@@ -1,0 +1,11 @@
+server:
+  port: 8889
+# routes to serviceId
+zuul:
+  routes:
+    api-a:
+      path: /userapi/**
+      serviceId: USER
+    api-b:
+      path: /addressapi/**
+      serviceId: ADDRESS
